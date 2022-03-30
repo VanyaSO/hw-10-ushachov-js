@@ -1,9 +1,4 @@
 let a = +prompt('Введите число a','0');
-console.log(a);
-
-let b = +prompt('Введите число b','0');
-console.log(b);
-
 
 let oneTask = (a === 0) ? 'Верно' : 'Неверно';
 console.log('1)',oneTask);
@@ -32,12 +27,53 @@ console.log('8)',eightTask);
 let nineTask = (a > 0 && a < 5) ? 'Верно' : 'Неверно';
 console.log('9)',nineTask);
 
+
+
+let b = +prompt('Введите число b','0');
+
 if (a === 0 || a === 2){
-    tenTask = a + 7;
+    console.log('10)',a + 7);
 }else{
-    tenTask = a / 10;
+    console.log('10)',a / 10);
 }
-alert(`10) ${tenTask}`);
+
+if (a <= 1 && b >= 3){
+    console.log('11)',a + b);
+}else{
+    console.log('11)',a - b);
+}
+
+if (a > 2 && a < 11 || b >= 6 && b < 14){
+    console.log('12) Верно');
+}else{
+    console.log('12) Неверно');
+}
+
+let num = +prompt('Введите число от 1 до 4 и вы узнаете время года');
+let result;
+
+switch(num){
+    case 1:
+        result = 'Зима';
+        break;
+    case 2:
+        result = 'Весна'
+        break;
+    case 3:
+        result = 'Лето'
+        break;
+    case 4:
+        result = 'Осень';
+        break;
+
+    default:
+        alert('Не найдено');
+}
+
+console.log('13)', result);
+
+
+
 
 
 
